@@ -10,8 +10,8 @@ This is a repository for Deep Learning course.
 | 3     | Weight initialization. Batch normalization. CNN    |   [slides](lectures/Lecture_3.pdf)        |     [ipynb](seminars/Seminar_3.ipynb)    |  [record](https://youtu.be/8KxIGPAXmEA)          |
 | 4     | [TBD]     |           |         |           |
 | 5     | [TBD]     |           |         |           |
-| 6     | [TBD]     |           |         |           |
-| 7     | [TBD]     |           |         |           |
+| 6     | Computer vision. Classification. Object detection |           |         |           |
+| 7     | S     |           |         |           |
 | 8     | [TBD]     |           |         |           |
 | 9     | [TBD]     |           |         |           |
 | 10     | [TBD]     |           |         |           |
