@@ -12,7 +12,7 @@ This is a repository for Deep Learning course.
 | 5     | Attention. Transformer. BERT.    |    [slides](lectures/Lecture_5.pdf)        |     [ipynb](seminars/Seminar_5.ipynb)      |     [record](https://www.youtube.com/watch?v=zijHaKOyRyg)      |
 | 6     | Computer vision. Classification. Object detection |  [slides](lectures/Lecture_6.pdf)        | [slides](seminars/Seminar_6.pdf) & [ipynb](seminars/Seminar_6.ipynb)       |           |
 | 7     | Semantic segmentation. Instance segmentation.     |  [slides](lectures/Lecture_7.pdf)        |  [ipynb](seminars/Seminar_7.ipynb)      |           |
-| 8     | [TBD]     |           |         |           |
+| 8     | Reinforcement learning. V-, Q-functions. Belman equations. Value iteration.   |    [slides](lectures/Lecture_8.pdf)       |    -       |  [record](https://www.youtube.com/watch?v=mmhh1ol7MqI) |  
 | 9     | [TBD]     |           |         |           |
 | 10     | [TBD]     |           |         |           |
 | 11     | [TBD]     |           |         |           |
