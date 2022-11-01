@@ -13,7 +13,7 @@ This is a repository for Deep Learning course.
 | 6     | Computer vision. Classification. Object detection |  [slides](lectures/Lecture_6.pdf)        | [slides](seminars/Seminar_6.pdf) & [ipynb](seminars/Seminar_6.ipynb)       |           |
 | 7     | Semantic segmentation. Instance segmentation.     |  [slides](lectures/Lecture_7.pdf)        |  [ipynb](seminars/Seminar_7.ipynb)      |           |
 | 8     | Reinforcement learning. V-, Q-functions. Belman equations. Value iteration.   |    [slides](lectures/Lecture_8.pdf)       |    -       |  [record](https://www.youtube.com/watch?v=mmhh1ol7MqI) |  
-| 9     | [TBD]     |           |         |           |
+| 9     | Monte-Carlo methods. Temporal learning. Q-learning. DQN.  |    [slides](lectures/Lecture_9.pdf)         |   -      |     [record](https://www.youtube.com/watch?v=Hz2ZDmrwV3c&t)      |
 | 10     | [TBD]     |           |         |           |
 | 11     | [TBD]     |           |         |           |
 | 12     | [TBD]     |           |         |           |
