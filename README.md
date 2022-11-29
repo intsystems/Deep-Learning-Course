@@ -15,6 +15,6 @@ This is a repository for Deep Learning course.
 | 8     | Reinforcement learning. V-, Q-functions. Belman equations. Value iteration.   |    [slides](lectures/Lecture_8.pdf)       |    -       |  [record](https://www.youtube.com/watch?v=mmhh1ol7MqI) |  
 | 9     | Monte-Carlo methods. Temporal learning. Q-learning. DQN.  |    [slides](lectures/Lecture_9.pdf)         |   -      |     [record](https://www.youtube.com/watch?v=Hz2ZDmrwV3c&t)      |
 | 10     | [TBD]     |           |         |           |
-| 11     | [TBD]     |           |         |           |
-| 12     | [TBD]     |           |         |           |
-| 13     | [TBD]     |           |         |           |
+| 11     | Generative models. VAE     |   [slides](lectures/Lecture_11.pdf)         |    -     |           |
+| 12     | Autoregressive model. GAN. VQ-VAE     | [slides](lectures/Lecture_12.pdf)           |      -   |           |
+| 13     | Tabular Deep Learning   | [slides](lectures/Lecture_13.pdf)           |   [ipynb](seminars/Seminar_13.ipynb)       |           |
