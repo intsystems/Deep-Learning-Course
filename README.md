@@ -14,7 +14,8 @@ This is a repository for Deep Learning course.
 | 7     | Semantic segmentation. Instance segmentation.     |  [slides](lectures/Lecture_7.pdf)        |  [ipynb](seminars/Seminar_7.ipynb)      |           |
 | 8     | Reinforcement learning. V-, Q-functions. Belman equations. Value iteration.   |    [slides](lectures/Lecture_8.pdf)       |    -       |  [record](https://www.youtube.com/watch?v=mmhh1ol7MqI) |  
 | 9     | Monte-Carlo methods. Temporal learning. Q-learning. DQN.  |    [slides](lectures/Lecture_9.pdf)         |   -      |     [record](https://www.youtube.com/watch?v=Hz2ZDmrwV3c&t)      |
-| 10     | [TBD]     |           |         |           |
+| 10     | Policy gradients. Actor-Critic algorithm.  |     [slides](lectures/Lecture_10.pdf)       |         |           |
 | 11     | Generative models. VAE     |   [slides](lectures/Lecture_11.pdf)         |    -     |           |
 | 12     | Autoregressive model. GAN. VQ-VAE     | [slides](lectures/Lecture_12.pdf)           |      -   |           |
-| 13     | Tabular Deep Learning   | [slides](lectures/Lecture_13.pdf)           |   [ipynb](seminars/Seminar_13.ipynb)       |           |
+| 13     | Tabular Deep Learning.   | [slides](lectures/Lecture_13.pdf)           |   [ipynb](seminars/Seminar_13.ipynb)       |           |
+| 14    | 3D Deep Learning.   | [slides](lectures/Lecture_14.pdf)           |  -      |           |
