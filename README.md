@@ -6,7 +6,7 @@ This is a repository for Deep Learning course.
 |  №    | Topic      |  Lecture  | Seminar | Recording | 
 | ----- | ----------    | :-------:   | :-----:   | :-------:   |
 | 1     | Multi-layer perceptron. Gradient calculation | [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture_1.pdf)        |   -      |     [record](https://www.youtube.com/watch?v=2q73ILfhxC4&t=3610s)      |
-| 2     | NN optimization. Regularization      |  [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture_2.pdf)        |   [ipynb]    |    [record] |
+| 2     | NN optimization. Regularization      |  [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture_2.pdf)        |   [ipynb](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_1.ipynb)     |    [record] |
 | 3     | Weight initialization. Batch normalization. CNN    |   [slides]       |     [ipynb]   |  [record]          |
 | 4     | Recurrent neural networks. LSTM. GRU. DropOut in RNN.   |   [slides]        |    [ipynb]     |    [record]      |
 | 5     | Attention. Transformer. BERT.    |    [slides]      |     [ipynb]    |     [record]     |
