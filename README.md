@@ -6,8 +6,8 @@ This is a repository for Deep Learning course.
 |  №    | Topic      |  Lecture  | Seminar | Recording | 
 | ----- | ----------    | :-------:   | :-----:   | :-------:   |
 | 1     | Multi-layer perceptron. Gradient calculation | [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture_1.pdf)        |   -      |     [record](https://www.youtube.com/watch?v=2q73ILfhxC4&t=3610s)      |
-| 2     | NN optimization. Regularization      |  [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture_2.pdf)        |   [ipynb](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_1.ipynb)     |    [record] |
-| 3     | Weight initialization. Batch normalization. CNN    |   [slides]       |     [ipynb](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_2.ipynb)    |  [record]          |
+| 2     | NN optimization. Regularization      |  [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture_2.pdf)        |   [ipynb](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_1.ipynb)     |    [record](https://www.youtube.com/watch?v=bvwRHrgojsg&ab_channel=MachineLearning) |
+| 3     | Weight initialization. Batch normalization. CNN    |   [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture_3.pdf)       |     [ipynb](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_2.ipynb)    |  [record](https://www.youtube.com/watch?v=Xhb8p6SOyMg&ab_channel=MachineLearning)          |
 | 4     | Recurrent neural networks. LSTM. GRU. DropOut in RNN.   |   [slides]        |    [ipynb]     |    [record]      |
 | 5     | Attention. Transformer. BERT.    |    [slides]      |     [ipynb]    |     [record]     |
 | 6     | Computer vision. Classification. Object detection |  [slides]        | [slides] & [ipynb]     |     [record (sem)]      |
