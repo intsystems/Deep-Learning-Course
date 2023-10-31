@@ -1,4 +1,4 @@
-# Deep-Learning-Course-2022
+# Deep-Learning-Course-2023
 
 This is a repository for Deep Learning course.
 
