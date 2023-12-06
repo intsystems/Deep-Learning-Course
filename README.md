@@ -18,4 +18,3 @@ This is a repository for Deep Learning course.
 | 11     | Generative models. VAE     |   [slides](lectures/Lecture_11.pdf)      |    [ipynb](seminars/Seminar_11.ipynb)     |     [record](https://www.youtube.com/watch?v=dEgIe0tUqDo&t=7684s)     |
 | 12     | Autoregressive model. GAN.     | [slides](lectures/Lecture_12.pdf)          |      -   |     [record](https://www.youtube.com/watch?v=40Fg5MNigLQ&t=6634s)     |
 | 13     | Graph Learning  | [slides]          |   [ipynb]    |      [record]   |
-| 14    | 3D Deep Learning.   | [slides]        |  -      |     [record]     |
