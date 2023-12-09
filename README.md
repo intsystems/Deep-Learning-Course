@@ -17,4 +17,4 @@ This is a repository for Deep Learning course.
 | 10     | Policy gradients. Actor-Critic algorithm.  |     [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture_10.pdf)    |   [ipynb](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_10.ipynb)    |      [record](https://www.youtube.com/watch?v=XAFXM8A5e7Y&ab_channel=MachineLearning)   |
 | 11     | Generative models. VAE     |   [slides](lectures/Lecture_11.pdf)      |    [ipynb](seminars/Seminar_11.ipynb)     |     [record](https://www.youtube.com/watch?v=dEgIe0tUqDo&t=7684s)     |
 | 12     | Autoregressive model. GAN.     | [slides](lectures/Lecture_12.pdf)          |      -   |     [record](https://www.youtube.com/watch?v=40Fg5MNigLQ&t=6634s)     |
-| 13     | Graph Learning  | [slides](lectures/Lecture_13.pdf)    |   [ipynb]    |      [record](https://www.youtube.com/watch?v=GgVxbObNNoA&t=3419s&ab_channel=MachineLearning)   |
+| 13     | Graph Learning  | [slides](lectures/Lecture_13.pdf)    |   [ipynb](seminars/Seminar_13.ipynb)     |      [record](https://www.youtube.com/watch?v=GgVxbObNNoA&t=3419s&ab_channel=MachineLearning)   |
