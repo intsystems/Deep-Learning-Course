@@ -12,3 +12,6 @@
 
 
 ## Lecture 2
+
+
+- [Notes on Russian](http://vbystricky.ru) are very good notes on Russian
