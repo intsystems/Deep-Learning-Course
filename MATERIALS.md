@@ -15,3 +15,7 @@
 
 
 - [Notes on Russian](http://vbystricky.ru) are very good notes on Russian
+
+
+
+- [Numpy acceleration](https://pythonspeed.com/articles/vectorization-python-alternatives)
