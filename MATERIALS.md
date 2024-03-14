@@ -23,3 +23,6 @@
 
 ## Interviews
 - [Leetcode for ML/DL](https://datalemur.com/questions)
+
+## Master/PhD
+- [Master's application guide](https://edeyneka.github.io/posts/2021/09/masters-application)
