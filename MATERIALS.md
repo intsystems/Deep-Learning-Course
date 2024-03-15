@@ -23,6 +23,7 @@
 
 ## Interviews
 - [Leetcode for ML/DL](https://datalemur.com/questions)
+- [Basic ML](https://github.com/iamtodor/data-science-interview-questions-and-answers)
 
 ## Master/PhD
 - [Master's application guide](https://edeyneka.github.io/posts/2021/09/masters-application)
