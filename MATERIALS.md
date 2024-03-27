@@ -3,6 +3,7 @@
 - [CS231n](http://cs231n.stanford.edu/) is a great course to get started on DL for vision.
 - [Dive into Deep Learning](http://en.diveintodeeplearning.org/) is an interactive open source book with code, math, and discussions.
 - [Introduction to Deep Learning](http://introtodeeplearning.com/) is MIT's course for beginners to develop basic undestanding of DL.
+- [Deep Learning School](https://dls.samcs.ru/)
 
 ## Lecture 1
 
@@ -29,3 +30,5 @@
 
 ## Master/PhD
 - [Master's application guide](https://edeyneka.github.io/posts/2021/09/masters-application)
+
+  
