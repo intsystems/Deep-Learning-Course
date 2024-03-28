@@ -14,11 +14,6 @@
 
 ## Lecture 2
 
-
-
-
-
-
 - [Notes on Russian](http://vbystricky.ru) are very good notes on Russian
 - [Numpy acceleration](https://pythonspeed.com/articles/vectorization-python-alternatives)
 
@@ -27,6 +22,7 @@
 - [Leetcode for ML/DL](https://datalemur.com/questions)
 - [Basic ML](https://github.com/iamtodor/data-science-interview-questions-and-answers)
 - [Blogs](https://github.com/josephmisiti/awesome-machine-learning/blob/master/blogs.md)
+- [Math of Deep Learning](https://arxiv.org/pdf/2201.00650.pdf)
 
 ## Master/PhD
 - [Master's application guide](https://edeyneka.github.io/posts/2021/09/masters-application)
