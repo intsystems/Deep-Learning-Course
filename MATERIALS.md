@@ -30,5 +30,6 @@
 
 ## System Design
 - [Interview guide](http://patrickhalina.com/posts/systems-design-interview-guide/)
+- [Examples of companies](https://www.evidentlyai.com/ml-system-design)
 
   
