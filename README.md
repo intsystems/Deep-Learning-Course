@@ -5,7 +5,7 @@ This is a repository for Deep Learning course.
 
 |  №    | Topic      |  Lecture  | Seminar | Recording | 
 | ----- | ----------    | :-------:   | :-----:   | :-------:   |
-| 1     | Multi-layer perceptron. Gradient calculation | [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture_1.pdf)        |   -      |     [record]()      |
+| 1     | Multi-layer perceptron. Gradient calculation | [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture_1.pdf)        |   -      |     [record](https://www.youtube.com/watch?v=DDXB4iv8MuA&ab_channel=MachineLearning%E2%80%93IntelligentSystems)      |
 | 2     | NN optimization. Regularization      |         |        |     |
 | 3     | Weight initialization. Batch normalization. CNN    |    |         |           |
 | 4     | Recurrent neural networks. LSTM. GRU. DropOut in RNN.   |          |         |          |
