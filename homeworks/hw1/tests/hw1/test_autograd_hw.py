@@ -9,6 +9,13 @@ import numpy as np
 import needle as ndl
 
 
+def assert_allclose_list(list1, list2, rtol=1e-05, atol=1e-08):
+    assert len(list1) == len(list2)
+    assert all(
+        np.allclose(a, b, rtol=rtol, atol=atol) for a, b in zip(list1, list2)
+    ), "Arrays are not close!"
+
+
 ##############################################################################
 ### TESTS/SUBMISSION CODE FOR forward passes
 def test_power_scalar_forward():
@@ -353,7 +360,202 @@ def test_log_forward():
 def test_exp_forward():
     np.testing.assert_allclose(
         ndl.exp(ndl.Tensor([[4.0], [4.55]])).numpy(),
-        np.array([[54.59815003],[94.63240831]]),
+        np.array([[54.59815003], [94.63240831]]),
+    )
+
+
+def test_forward_2():
+    # Test case 1
+    result = ndl.power_scalar(ndl.Tensor([[0.3, 2.5]]), scalar=3).numpy()
+    np.testing.assert_allclose(result, np.array([[0.027, 15.625]]))
+
+    # Test case 2
+    result = ndl.divide(
+        ndl.Tensor([[3.4, 2.35, 1.25], [0.45, 1.95, 2.55]]),
+        ndl.Tensor([[4.9, 4.35, 4.1], [0.65, 0.7, 4.04]]),
+    ).numpy()
+    np.testing.assert_allclose(
+        result,
+        np.array(
+            [[0.69387755, 0.54022989, 0.30487805], [0.69230769, 2.78571429, 0.63118812]]
+        ),
+    )
+
+    # Test case 3
+    result = ndl.divide_scalar(ndl.Tensor([[1.4, 2.89]]), scalar=7).numpy()
+    np.testing.assert_allclose(result, np.array([[0.2, 0.41285714]]))
+
+    # Test case 4
+    result = ndl.matmul(
+        ndl.Tensor([[1.75, 1.75, 0.25], [4.95, 4.35, 0.3], [0.3, 1.4, 2.1]]),
+        ndl.Tensor([[2.35, 2.2, 1.85], [7.85, 4.88, 2.6], [1.15, 0.25, 4.19]]),
+    ).numpy()
+    np.testing.assert_allclose(
+        result,
+        np.array(
+            [
+                [18.1375, 12.4525, 8.835],
+                [46.125, 32.193, 21.7245],
+                [14.11, 8.017, 12.994],
+            ]
+        ),
+    )
+
+    # Test case 5
+    result = ndl.summation(
+        ndl.Tensor(
+            [
+                [1.2, 4.35, 1.4, 0.3, 0.75],
+                [2.0, 1.85, 7.75, 3.7, 1.55],
+                [9.2, 2.3, 3.45, 0.7, 0.0],
+            ]
+        )
+    ).numpy()
+    np.testing.assert_allclose(result, np.array(40.5))
+
+    # Test case 6
+    result = ndl.summation(
+        ndl.Tensor(
+            [
+                [5.05, 2.55, 1.0],
+                [2.75, 3.7, 2.1],
+                [0.1, 4.1, 3.3],
+                [1.4, 0.4, 3.4],
+                [2.8, 0.55, 2.9],
+            ]
+        ),
+        axes=1,
+    ).numpy()
+    np.testing.assert_allclose(result, np.array([8.6, 8.55, 7.5, 5.2, 6.25]))
+
+    # Test case 7
+    result = ndl.broadcast_to(ndl.Tensor([[1.95, 3.85, -0.6]]), shape=(3, 3, 3)).numpy()
+    np.testing.assert_allclose(
+        result,
+        np.array(
+            [
+                [[1.95, 3.85, -0.6], [1.95, 3.85, -0.6], [1.95, 3.85, -0.6]],
+                [[1.95, 3.85, -0.6], [1.95, 3.85, -0.6], [1.95, 3.85, -0.6]],
+                [[1.95, 3.85, -0.6], [1.95, 3.85, -0.6], [1.95, 3.85, -0.6]],
+            ]
+        ),
+    )
+
+    # Test case 8
+    result = ndl.reshape(
+        ndl.Tensor(
+            [
+                [7.9, 2.0, 2.4],
+                [3.11, 3.95, 0.65],
+                [2.1, 2.18, 2.2],
+                [1.9, 4.54, 3.25],
+                [1.35, 7.45, 3.45],
+            ]
+        ),
+        shape=(15,),
+    ).numpy()
+    np.testing.assert_allclose(
+        result,
+        np.array(
+            [
+                7.9,
+                2.0,
+                2.4,
+                3.11,
+                3.95,
+                0.65,
+                2.1,
+                2.18,
+                2.2,
+                1.9,
+                4.54,
+                3.25,
+                1.35,
+                7.45,
+                3.45,
+            ]
+        ),
+    )
+
+    # Test case 9
+    result = ndl.reshape(
+        ndl.Tensor(
+            [
+                [[5.1, 4.05, 1.25, 4.65], [3.65, 0.9, 0.65, 1.65]],
+                [[4.7, 1.4, 2.55, 4.8], [2.8, 1.75, 3.8, 0.6]],
+                [[3.75, 0.6, 1.0, 3.5], [8.15, 1.9, 4.55, 2.83]],
+            ]
+        ),
+        shape=(2, 3, 4),
+    ).numpy()
+    np.testing.assert_allclose(
+        result,
+        np.array(
+            [
+                [
+                    [5.1, 4.05, 1.25, 4.65],
+                    [3.65, 0.9, 0.65, 1.65],
+                    [4.7, 1.4, 2.55, 4.8],
+                ],
+                [[2.8, 1.75, 3.8, 0.6], [3.75, 0.6, 1.0, 3.5], [8.15, 1.9, 4.55, 2.83]],
+            ]
+        ),
+    )
+
+    # Test case 10
+    result = ndl.negate(ndl.Tensor([[1.45, 0.55]])).numpy()
+    np.testing.assert_allclose(result, np.array([[-1.45, -0.55]]))
+
+    # Test case 11
+    result = ndl.transpose(
+        ndl.Tensor([[[3.45]], [[2.54]], [[1.91]]]), axes=(0, 1)
+    ).numpy()
+    np.testing.assert_allclose(result, np.array([[[3.45], [2.54], [1.91]]]))
+
+    # Test case 12
+    result = ndl.transpose(
+        ndl.Tensor([[4.45, 2.15], [1.89, 1.21], [6.15, 2.42]])
+    ).numpy()
+    np.testing.assert_allclose(
+        result, np.array([[4.45, 1.89, 6.15], [2.15, 1.21, 2.42]])
+    )
+
+    # Test case 13
+    result = ndl.log(ndl.Tensor([[[3.45]], [[2.54]], [[1.91]]])).numpy()
+    np.testing.assert_allclose(
+        result, np.array([[[1.23837423]], [[0.93216408]], [[0.64710324]]])
+    )
+
+    # Test case 14
+    result = ndl.log(ndl.Tensor([[4.45, 2.15], [1.89, 1.21], [6.15, 2.42]])).numpy()
+    np.testing.assert_allclose(
+        result,
+        np.array(
+            [
+                [1.4929041, 0.76546784],
+                [0.63657683, 0.19062036],
+                [1.81645208, 0.88376754],
+            ]
+        ),
+    )
+
+    # Test case 15
+    result = ndl.exp(ndl.Tensor([[[3.45]], [[2.54]], [[1.91]]])).numpy()
+    np.testing.assert_allclose(
+        result, np.array([[[31.50039231]], [[12.67967097]], [[6.7530888]]])
+    )
+
+    # Test case 16
+    result = ndl.exp(ndl.Tensor([[4.45, 2.15], [1.89, 1.21], [6.15, 2.42]])).numpy()
+    np.testing.assert_allclose(
+        result,
+        np.array(
+            [
+                [85.626944, 8.5848584],
+                [6.61936868, 3.35348465],
+                [468.71738678, 11.24585931],
+            ]
+        ),
     )
 
 
@@ -393,6 +595,7 @@ def test_power_scalar_backward():
     gradient_check(
         ndl.power_scalar, ndl.Tensor(np.random.randn(5, 4)), scalar=np.random.randint(1)
     )
+
 
 def test_divide_backward():
     gradient_check(
@@ -478,6 +681,513 @@ def test_exp_backward():
     gradient_check(ndl.exp, ndl.Tensor(1 + np.random.rand(5, 4)))
 
 
+def test_backward_2():
+    np.random.seed(0)
+
+    # Test case 1
+    result = gradient_check(
+        ndl.power_scalar, ndl.Tensor(np.random.randn(3, 5)), scalar=np.random.randint(1)
+    )
+    np.testing.assert_allclose(
+        result,
+        [
+            np.array(
+                [
+                    [0.0, 0.0, 0.0, 0.0, 0.0],
+                    [-0.0, 0.0, -0.0, -0.0, 0.0],
+                    [0.0, 0.0, 0.0, 0.0, 0.0],
+                ]
+            )
+        ],
+    )
+
+    # Test case 2
+    result = gradient_check(
+        ndl.divide,
+        ndl.Tensor(np.random.randn(3, 5)),
+        ndl.Tensor(6 + np.random.randn(3, 5)),
+    )
+    np.testing.assert_allclose(
+        result[0],
+        np.array(
+            [
+                [0.16247092, 0.15678497, 0.19560996, 0.24880551, 0.17692577],
+                [0.16243394, 0.13830703, 0.138843, 0.17816822, 0.1755095],
+                [0.20196116, 0.21834147, 0.23289775, 0.1257739, 0.18213782],
+            ]
+        ),
+        atol=1e-8,
+        rtol=1e-5,
+    )
+    np.testing.assert_allclose(
+        result[1],
+        np.array(
+            [
+                [-0.00880793, -0.03672674, 0.00785002, -0.0193802, 0.02673553],
+                [0.06736008, -0.01250296, -0.01666406, 0.02355922, -0.06991658],
+                [0.05932112, -0.00218145, 0.01015311, -0.02424715, -0.04874478],
+            ]
+        ),
+        atol=1e-8,
+        rtol=1e-5,
+    )
+
+    # Test case 3
+    result = gradient_check(
+        ndl.divide_scalar, ndl.Tensor(np.random.randn(3, 5)), scalar=np.random.randn(1)
+    )
+    np.testing.assert_allclose(
+        result,
+        [
+            np.array(
+                [
+                    [-1.48707631, -1.48707631, -1.48707631, -1.48707631, -1.48707631],
+                    [-1.48707631, -1.48707631, -1.48707631, -1.48707631, -1.48707631],
+                    [-1.48707631, -1.48707631, -1.48707631, -1.48707631, -1.48707631],
+                ]
+            )
+        ],
+    )
+
+    # Test case 4
+    result = gradient_check(
+        ndl.matmul, ndl.Tensor(np.random.randn(1, 5)), ndl.Tensor(np.random.randn(5, 1))
+    )
+    np.testing.assert_allclose(
+        result[0],
+        np.array([[-1.63019835, 0.46278226, -0.90729836, 0.0519454, 0.72909056]]),
+    )
+    np.testing.assert_allclose(
+        result[1],
+        np.array(
+            [[-0.35955316], [-0.81314628], [-1.7262826], [0.17742614], [-0.40178094]]
+        ),
+    )
+
+    # Test case 5
+    result = gradient_check(
+        ndl.matmul, ndl.Tensor(np.random.randn(2, 4)), ndl.Tensor(np.random.randn(4, 2))
+    )
+    np.testing.assert_allclose(
+        result[0],
+        np.array(
+            [
+                [-1.1089845, 1.36648893, -0.04799149, 3.07466875],
+                [-1.1089845, 1.36648893, -0.04799149, 3.07466875],
+            ]
+        ),
+    )
+    np.testing.assert_allclose(
+        result[1],
+        np.array(
+            [
+                [-0.55582718, -0.55582718],
+                [0.26860354, 0.26860354],
+                [-1.81367549, -1.81367549],
+                [0.09078911, 0.09078911],
+            ]
+        ),
+    )
+
+    # Test case 6
+    result = gradient_check(
+        ndl.matmul,
+        ndl.Tensor(np.random.randn(2, 4)),
+        ndl.Tensor(np.random.randn(7, 4, 2)),
+    )
+    np.testing.assert_allclose(
+        result[0],
+        np.array(
+            [
+                [8.64955648, 4.14059474, 2.92385998, 0.07633434],
+                [8.64955648, 4.14059474, 2.92385998, 0.07633434],
+            ]
+        ),
+    )
+    np.testing.assert_allclose(
+        result[1],
+        np.array(
+            [
+                [
+                    [1.04252023, 1.04252023],
+                    [-0.86247764, -0.86247764],
+                    [2.03109076, 2.03109076],
+                    [-0.04681055, -0.04681055],
+                ],
+                [
+                    [1.04252023, 1.04252023],
+                    [-0.86247764, -0.86247764],
+                    [2.03109076, 2.03109076],
+                    [-0.04681055, -0.04681055],
+                ],
+                [
+                    [1.04252023, 1.04252023],
+                    [-0.86247764, -0.86247764],
+                    [2.03109076, 2.03109076],
+                    [-0.04681055, -0.04681055],
+                ],
+                [
+                    [1.04252023, 1.04252023],
+                    [-0.86247764, -0.86247764],
+                    [2.03109076, 2.03109076],
+                    [-0.04681055, -0.04681055],
+                ],
+                [
+                    [1.04252023, 1.04252023],
+                    [-0.86247764, -0.86247764],
+                    [2.03109076, 2.03109076],
+                    [-0.04681055, -0.04681055],
+                ],
+                [
+                    [1.04252023, 1.04252023],
+                    [-0.86247764, -0.86247764],
+                    [2.03109076, 2.03109076],
+                    [-0.04681055, -0.04681055],
+                ],
+                [
+                    [1.04252023, 1.04252023],
+                    [-0.86247764, -0.86247764],
+                    [2.03109076, 2.03109076],
+                    [-0.04681055, -0.04681055],
+                ],
+            ]
+        ),
+    )
+
+    # Test case 7
+    result = gradient_check(
+        ndl.matmul,
+        ndl.Tensor(np.random.randn(3, 2, 1)),
+        ndl.Tensor(np.random.randn(3, 3, 1, 2)),
+    )
+    np.testing.assert_allclose(
+        result[0],
+        np.array(
+            [
+                [[-2.127483], [-2.127483]],
+                [[0.0838534], [0.0838534]],
+                [[0.83694312], [0.83694312]],
+            ]
+        ),
+    )
+    np.testing.assert_allclose(
+        result[1],
+        np.array(
+            [
+                [
+                    [[0.9685879, 0.9685879]],
+                    [[-0.92489106, -0.92489106]],
+                    [[0.46315764, 0.46315764]],
+                ],
+                [
+                    [[0.9685879, 0.9685879]],
+                    [[-0.92489106, -0.92489106]],
+                    [[0.46315764, 0.46315764]],
+                ],
+                [
+                    [[0.9685879, 0.9685879]],
+                    [[-0.92489106, -0.92489106]],
+                    [[0.46315764, 0.46315764]],
+                ],
+            ]
+        ),
+    )
+
+    # Test case 8
+    result = gradient_check(
+        ndl.matmul,
+        ndl.Tensor(np.random.randn(2, 4)),
+        ndl.Tensor(np.random.randn(2, 4, 4, 2)),
+    )
+    np.testing.assert_allclose(
+        result[0],
+        np.array(
+            [
+                [-3.34425985, -0.09100445, 2.61732935, -4.45420866],
+                [-3.34425985, -0.09100445, 2.61732935, -4.45420866],
+            ]
+        ),
+    )
+    np.testing.assert_allclose(
+        result[1],
+        np.array(
+            [
+                [
+                    [
+                        [0.69907368, 0.69907368],
+                        [-1.15740358, -1.15740358],
+                        [-2.06450107, -2.06450107],
+                        [-1.09915091, -1.09915091],
+                    ],
+                    [
+                        [0.69907368, 0.69907368],
+                        [-1.15740358, -1.15740358],
+                        [-2.06450107, -2.06450107],
+                        [-1.09915091, -1.09915091],
+                    ],
+                    [
+                        [0.69907368, 0.69907368],
+                        [-1.15740358, -1.15740358],
+                        [-2.06450107, -2.06450107],
+                        [-1.09915091, -1.09915091],
+                    ],
+                    [
+                        [0.69907368, 0.69907368],
+                        [-1.15740358, -1.15740358],
+                        [-2.06450107, -2.06450107],
+                        [-1.09915091, -1.09915091],
+                    ],
+                ],
+                [
+                    [
+                        [0.69907368, 0.69907368],
+                        [-1.15740358, -1.15740358],
+                        [-2.06450107, -2.06450107],
+                        [-1.09915091, -1.09915091],
+                    ],
+                    [
+                        [0.69907368, 0.69907368],
+                        [-1.15740358, -1.15740358],
+                        [-2.06450107, -2.06450107],
+                        [-1.09915091, -1.09915091],
+                    ],
+                    [
+                        [0.69907368, 0.69907368],
+                        [-1.15740358, -1.15740358],
+                        [-2.06450107, -2.06450107],
+                        [-1.09915091, -1.09915091],
+                    ],
+                    [
+                        [0.69907368, 0.69907368],
+                        [-1.15740358, -1.15740358],
+                        [-2.06450107, -2.06450107],
+                        [-1.09915091, -1.09915091],
+                    ],
+                ],
+            ]
+        ),
+    )
+
+    # Test case 9
+    result = gradient_check(
+        ndl.reshape, ndl.Tensor(np.random.randn(5, 4)), shape=(5, 4, 1)
+    )
+    np.testing.assert_allclose(
+        result[0],
+        np.array(
+            [
+                [1.0, 1.0, 1.0, 1.0],
+                [1.0, 1.0, 1.0, 1.0],
+                [1.0, 1.0, 1.0, 1.0],
+                [1.0, 1.0, 1.0, 1.0],
+                [1.0, 1.0, 1.0, 1.0],
+            ]
+        ),
+    )
+
+    # Test case 10
+    result = gradient_check(
+        ndl.reshape, ndl.Tensor(np.random.randn(5, 4)), shape=(2, 2, 5)
+    )
+    np.testing.assert_allclose(
+        result[0],
+        np.array(
+            [
+                [1.0, 1.0, 1.0, 1.0],
+                [1.0, 1.0, 1.0, 1.0],
+                [1.0, 1.0, 1.0, 1.0],
+                [1.0, 1.0, 1.0, 1.0],
+                [1.0, 1.0, 1.0, 1.0],
+            ]
+        ),
+    )
+
+    # Test case 11
+    result = gradient_check(ndl.negate, ndl.Tensor(np.random.randn(1, 4, 2)))
+    np.testing.assert_allclose(
+        result[0], np.array([[[-1.0, -1.0], [-1.0, -1.0], [-1.0, -1.0], [-1.0, -1.0]]])
+    )
+
+    # Test case 12
+    result = gradient_check(
+        ndl.transpose, ndl.Tensor(np.random.randn(3, 2, 4)), axes=(0, 2)
+    )
+    np.testing.assert_allclose(
+        result[0],
+        np.array(
+            [
+                [[1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0]],
+                [[1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0]],
+                [[1.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0]],
+            ]
+        ),
+    )
+
+    # Test case 13
+    result = gradient_check(
+        ndl.broadcast_to, ndl.Tensor(np.random.randn(7, 1)), shape=(7, 7)
+    )
+    np.testing.assert_allclose(
+        result[0], np.array([[7.0], [7.0], [7.0], [7.0], [7.0], [7.0], [7.0]])
+    )
+
+    # Test case 14
+    result = gradient_check(
+        ndl.broadcast_to, ndl.Tensor(np.random.randn(1, 5)), shape=(5, 5)
+    )
+    np.testing.assert_allclose(result[0], np.array([[5.0, 5.0, 5.0, 5.0, 5.0]]))
+
+    # Test case 15
+    result = gradient_check(
+        ndl.broadcast_to, ndl.Tensor(np.random.randn(1)), shape=(4, 4, 4)
+    )
+    np.testing.assert_allclose(result[0], np.array([64.0]))
+
+    # Test case 16
+    result = gradient_check(
+        ndl.broadcast_to, ndl.Tensor(np.random.randn()), shape=(1, 3, 6)
+    )
+    np.testing.assert_allclose(result[0], np.array([18.0]))
+
+    # Test case 17
+    result = gradient_check(
+        ndl.broadcast_to, ndl.Tensor(np.random.randn(4, 4, 1)), shape=(4, 4, 6)
+    )
+    np.testing.assert_allclose(
+        result[0],
+        np.array(
+            [
+                [[6.0], [6.0], [6.0], [6.0]],
+                [[6.0], [6.0], [6.0], [6.0]],
+                [[6.0], [6.0], [6.0], [6.0]],
+                [[6.0], [6.0], [6.0], [6.0]],
+            ]
+        ),
+    )
+
+    # Test case 18
+    result = gradient_check(ndl.summation, ndl.Tensor(np.random.randn(3, 2, 1)))
+    np.testing.assert_allclose(
+        result[0], np.array([[[1.0], [1.0]], [[1.0], [1.0]], [[1.0], [1.0]]])
+    )
+
+    # Test case 19
+    result = gradient_check(ndl.summation, ndl.Tensor(np.random.randn(3, 6)), axes=(1,))
+    np.testing.assert_allclose(
+        result[0],
+        np.array(
+            [
+                [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+                [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+                [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+            ]
+        ),
+    )
+
+    # Test case 20
+    result = gradient_check(
+        ndl.summation,
+        ndl.Tensor(
+            np.random.randn(
+                7,
+            )
+        ),
+        axes=(0,),
+    )
+    np.testing.assert_allclose(result[0], np.array([1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]))
+
+    # Test case 21
+    result = gradient_check(
+        ndl.summation, ndl.Tensor(np.random.randn(7, 8)), axes=(0, 1)
+    )
+    np.testing.assert_allclose(
+        result[0],
+        np.array(
+            [
+                [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+                [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+                [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+                [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+                [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+                [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+                [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+            ]
+        ),
+    )
+
+    # Test case 22
+    result = gradient_check(
+        ndl.summation, ndl.Tensor(np.random.randn(5, 4, 5)), axes=(0, 1, 2)
+    )
+    np.testing.assert_allclose(
+        result[0],
+        np.array(
+            [
+                [
+                    [1.0, 1.0, 1.0, 1.0, 1.0],
+                    [1.0, 1.0, 1.0, 1.0, 1.0],
+                    [1.0, 1.0, 1.0, 1.0, 1.0],
+                    [1.0, 1.0, 1.0, 1.0, 1.0],
+                ],
+                [
+                    [1.0, 1.0, 1.0, 1.0, 1.0],
+                    [1.0, 1.0, 1.0, 1.0, 1.0],
+                    [1.0, 1.0, 1.0, 1.0, 1.0],
+                    [1.0, 1.0, 1.0, 1.0, 1.0],
+                ],
+                [
+                    [1.0, 1.0, 1.0, 1.0, 1.0],
+                    [1.0, 1.0, 1.0, 1.0, 1.0],
+                    [1.0, 1.0, 1.0, 1.0, 1.0],
+                    [1.0, 1.0, 1.0, 1.0, 1.0],
+                ],
+                [
+                    [1.0, 1.0, 1.0, 1.0, 1.0],
+                    [1.0, 1.0, 1.0, 1.0, 1.0],
+                    [1.0, 1.0, 1.0, 1.0, 1.0],
+                    [1.0, 1.0, 1.0, 1.0, 1.0],
+                ],
+                [
+                    [1.0, 1.0, 1.0, 1.0, 1.0],
+                    [1.0, 1.0, 1.0, 1.0, 1.0],
+                    [1.0, 1.0, 1.0, 1.0, 1.0],
+                    [1.0, 1.0, 1.0, 1.0, 1.0],
+                ],
+            ]
+        ),
+    )
+
+    # Test case 23
+    result = gradient_check(ndl.log, ndl.Tensor(10 + np.random.rand(5, 4)))
+    np.testing.assert_allclose(
+        result[0],
+        np.array(
+            [
+                [0.09920111, 0.09915411, 0.09783399, 0.09900976],
+                [0.09741804, 0.09934285, 0.09934823, 0.09211262],
+                [0.09840466, 0.09469982, 0.09282073, 0.09563512],
+                [0.09848948, 0.0980431, 0.09584985, 0.09498269],
+                [0.09662358, 0.09275165, 0.09301442, 0.09151465],
+            ]
+        ),
+    )
+
+    # Test case 24
+    result = gradient_check(ndl.exp, ndl.Tensor(1.5 + np.random.rand(5, 4)))
+    np.testing.assert_allclose(
+        result[0],
+        np.array(
+            [
+                [4.61334204, 10.9757829, 6.6363943, 10.78733214],
+                [8.94222801, 12.0293411, 9.5762153, 6.45299669],
+                [7.39691612, 6.52988384, 6.45536673, 5.81769712],
+                [7.3593403, 8.86171174, 5.91410557, 7.57141378],
+                [5.03987003, 5.25849722, 4.69644742, 11.83109746],
+            ]
+        ),
+    )
+
+
 ##############################################################################
 ### TESTS/SUBMISSION CODE FOR find_topo_sort
 
@@ -554,6 +1264,70 @@ def test_topo_sort():
     assert len(soln) == len(topo_order)
     np.testing.assert_allclose(topo_order, soln, rtol=1e-06, atol=1e-06)
 
+    # Test case 1
+    a2, b2 = ndl.Tensor(np.asarray([[0.74683138]])), ndl.Tensor(
+        np.asarray([[0.65539231]])
+    )
+    c2 = 9 * a2 * a2 + 15 * b2 * a2 - b2
+
+    topo_order = np.array([x.numpy() for x in ndl.autograd.find_topo_sort([c2])])
+    assert_allclose_list(
+        topo_order,
+        np.array([
+            [[0.74683138]],
+            [[6.72148242]],
+            [[5.01981399]],
+            [[0.65539231]],
+            [[9.83088465]],
+            [[7.34201315]],
+            [[12.36182714]],
+            [[-0.65539231]],
+            [[11.70643483]],
+        ])
+    )
+
+    # Test case 2
+    a1, b1 = ndl.Tensor(np.asarray([[0.9067453], [0.18521121]])), ndl.Tensor(
+        np.asarray([[0.80992494, 0.52458167]])
+    )
+    c1 = 3 * ((b1 @ a1) + (2.3412 * b1) @ a1) + 1.5
+
+    topo_order2 = [x.numpy() for x in ndl.autograd.find_topo_sort([c1])]
+    assert_allclose_list(
+        topo_order2,
+        [
+            np.array([[0.80992494, 0.52458167]]),
+            np.array([[0.9067453], [0.18521121]]),
+            np.array([[0.83155404]]),
+            np.array([[1.89619627, 1.22815061]]),
+            np.array([[1.94683432]]),
+            np.array([[2.77838835]]),
+            np.array([[8.33516506]]),
+            np.array([[9.83516506]]),
+        ],
+    )
+
+    # Test case 3
+    c = ndl.Tensor(np.asarray([[-0.16541387, 2.52604789], [-0.31008569, -0.4748876]]))
+    d = ndl.Tensor(np.asarray([[0.55936155, -2.12630983], [0.59930618, -0.19554253]]))
+    f = (c + d @ d - d) @ c
+
+    topo_order3 = np.array([x.numpy() for x in ndl.autograd.find_topo_sort([f])])
+    assert_allclose_list(
+        topo_order3,
+        np.array(
+            [
+                [[-0.16541387, 2.52604789], [-0.31008569, -0.4748876]],
+                [[0.55936155, -2.12630983], [0.59930618, -0.19554253]],
+                [[-0.96142528, -0.77359196], [0.21803899, -1.23607374]],
+                [[-1.12683915, 1.75245593], [-0.0920467, -1.71096134]],
+                [[-0.55936155, 2.12630983], [-0.59930618, 0.19554253]],
+                [[-1.6862007, 3.87876576], [-0.69135288, -1.51541881]],
+                [[-0.92382877, -6.10140148], [0.58426904, -1.02673689]],
+            ]
+        ),
+    )
+
 
 ##############################################################################
 ### TESTS/SUBMISSION CODE FOR compute_gradient_of_variables
@@ -602,6 +1376,86 @@ def test_compute_gradient():
     assert grad_x2_x2.numpy() == 2
     assert grad_x2_x3.numpy() == 1
 
+    # Test case 1
+    a = ndl.Tensor(np.array([[-0.2985143, 0.36875625], [-0.918687, 0.52262925]]))
+    b = ndl.Tensor(np.array([[-1.58839928, 1.58592338], [-0.15932137, -0.55618462]]))
+    c = ndl.Tensor(np.array([[-0.5096208, 0.73466865], [0.38762148, -0.41149092]]))
+    d = (a + b) @ c @ (a + c)
+    d.backward()
+    grads = [x.grad.numpy() for x in [a, b, c]]
+    assert_allclose_list(
+        grads,
+        [
+            np.array([[1.79666176, 2.54291182], [-3.42775356, -2.6815035]]),
+            np.array([[-0.45899317, 0.2872569], [-0.45899317, 0.2872569]]),
+            np.array([[1.38014372, 3.50070627], [-2.401472, -3.77549271]]),
+        ],
+    )
+
+    # Test case 2
+    a = ndl.Tensor(
+        np.array(
+            [
+                [0.4736625, 0.06895066, 1.36455087, -0.31170743, 0.1370395],
+                [0.2283258, 0.72298311, -1.20394586, -1.95844434, -0.69535299],
+                [0.18016408, 0.0266557, 0.80940201, -0.45913678, -0.05886218],
+                [-0.50678819, -1.53276348, -0.27915708, -0.571393, -0.17145921],
+            ]
+        )
+    )
+    b = ndl.Tensor(
+        np.array(
+            [
+                [0.28738358, -1.27265428, 0.32388374],
+                [-0.77830395, 2.07830592, 0.99796268],
+                [-0.76966429, -1.37012833, -0.16733693],
+                [-0.44134101, -1.24495901, -1.62953897],
+                [-0.75627713, -0.80006226, 0.03875171],
+            ]
+        )
+    )
+    c = ndl.Tensor(
+        np.array(
+            [
+                [1.25727301, 0.39400789, 1.29139323, -0.950472],
+                [-0.21250305, -0.93591609, 1.6802009, -0.39765765],
+                [-0.16926597, -0.45218718, 0.38103032, -0.11321965],
+            ]
+        )
+    )
+    output = ndl.summation((a @ b) @ c @ a)
+    output.backward()
+    grads = [x.grad.numpy() for x in [a, b, c]]
+    assert_allclose_list(
+        grads,
+        [
+            np.array(
+                [
+                    [-2.21307916, 8.71540795, -8.25570267, -8.47564483, -5.36128287],
+                    [-6.73758707, 4.19090003, -12.78021058, -13.00015274, -9.88579078],
+                    [3.8823023, 14.8107894, -2.16032121, -2.38026337, 0.73409859],
+                    [-7.11633821, 3.8121489, -13.15896172, -13.37890388, -10.26454192],
+                ]
+            ),
+            np.array(
+                [
+                    [1.72156736, 1.65407439, 0.58461717],
+                    [-3.27548204, -3.14706883, -1.11230213],
+                    [3.16850871, 3.04428932, 1.07597567],
+                    [-15.13821981, -14.54473541, -5.14070112],
+                    [-3.61698879, -3.47518702, -1.22827245],
+                ]
+            ),
+            np.array(
+                [
+                    [3.78576053, -6.35098929, 1.08869066, -6.68996406],
+                    [3.17330266, -5.32353038, 0.912563, -5.60766603],
+                    [8.0409976, -13.48957211, 2.31239111, -14.2095583],
+                ]
+            ),
+        ],
+    )
+
 
 ##############################################################################
 ### TESTS/SUBMISSION CODE FOR softmax_loss
@@ -637,6 +1491,43 @@ def test_softmax_loss_ndl():
     Zsmall = ndl.Tensor(np.random.randn(16, 10).astype(np.float32))
     ysmall = ndl.Tensor(y_one_hot[:16])
     gradient_check(softmax_loss, Zsmall, ysmall, tol=0.01, backward=True)
+
+    # Test log
+    np.random.seed(0)
+    np.testing.assert_allclose(
+        gradient_check(ndl.log, ndl.Tensor(1 + np.random.rand(5, 4))),
+        np.array(
+            [
+                [0.64565553, 0.583026, 0.62392242, 0.64729813],
+                [0.70241747, 0.6075725, 0.69560997, 0.52860465],
+                [0.50925241, 0.72283504, 0.55812135, 0.65406719],
+                [0.63773698, 0.51931956, 0.93367538, 0.91985378],
+                [0.98018228, 0.54566691, 0.56238012, 0.53475588],
+            ]
+        ),
+    )
+
+    # Test softmax loss
+    X, y = parse_mnist(
+        "data/t10k-images-idx3-ubyte.gz", "data/t10k-labels-idx1-ubyte.gz"
+    )
+
+    y_one_hot = np.zeros((y.shape[0], 10))
+    y_one_hot[np.arange(y.size), y] = 1
+    y = ndl.Tensor(y_one_hot)
+    np.testing.assert_allclose(
+        softmax_loss(
+            ndl.Tensor(np.zeros((y.shape[0], 10)).astype(np.float32)), y
+        ).numpy(),
+        2.3025851249694824,
+    )
+    np.random.seed(0)
+    np.testing.assert_allclose(
+        softmax_loss(
+            ndl.Tensor(np.random.randn(y.shape[0], 10).astype(np.float32)), y
+        ).numpy(),
+        2.732871673844163,
+    )
 
 
 ##############################################################################
@@ -710,3 +1601,31 @@ def test_nn_epoch_ndl():
         rtol=1e-4,
         atol=1e-4,
     )
+
+def test_nn_epoch_ndl_2():
+    X, y = parse_mnist(
+        "data/train-images-idx3-ubyte.gz", "data/train-labels-idx1-ubyte.gz"
+    )
+
+    # First test case
+    np.random.seed(1)
+    W1 = ndl.Tensor(np.random.randn(X.shape[1], 100).astype(np.float32) / np.sqrt(100))
+    W2 = ndl.Tensor(np.random.randn(100, 10).astype(np.float32) / np.sqrt(10))
+    W1, W2 = nn_epoch(X[:100], y[:100], W1, W2, lr=0.1, batch=100)
+
+    np.testing.assert_allclose(np.linalg.norm(W1.numpy()), 27.988908036076715)
+    np.testing.assert_allclose(np.linalg.norm(W2.numpy()), 9.796814125323062)
+
+    # Second test case
+    np.random.seed(1)
+    W1 = ndl.Tensor(np.random.randn(X.shape[1], 100).astype(np.float32) / np.sqrt(100))
+    W2 = ndl.Tensor(np.random.randn(100, 10).astype(np.float32) / np.sqrt(10))
+    W1, W2 = nn_epoch(X, y, W1, W2, lr=0.2, batch=100)
+
+    np.testing.assert_allclose(np.linalg.norm(W1.numpy()), 28.528667964000803)
+    np.testing.assert_allclose(np.linalg.norm(W2.numpy()), 10.59444107121055)
+    np.testing.assert_allclose(
+        loss_err(ndl.Tensor(np.maximum(X @ W1.numpy(), 0)) @ W2, y),
+        (0.19377939086750373, 0.06016666666666667),
+    )
+
