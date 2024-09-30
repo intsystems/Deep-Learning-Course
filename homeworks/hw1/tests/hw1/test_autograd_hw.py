@@ -1495,7 +1495,7 @@ def test_softmax_loss_ndl():
     # Test log
     np.random.seed(0)
     np.testing.assert_allclose(
-        gradient_check(ndl.log, ndl.Tensor(1 + np.random.rand(5, 4))),
+        gradient_check(ndl.log, ndl.Tensor(1 + np.random.rand(5, 4)))[0],
         np.array(
             [
                 [0.64565553, 0.583026, 0.62392242, 0.64729813],
