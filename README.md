@@ -11,7 +11,7 @@ This is a repository for Deep Learning course.
 | 4     | Recurrent neural networks. LSTM. GRU. DropOut in RNN. State Space Models.  |    [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture_4.pdf)       |  [ipynb](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_4.ipynb)       |          |
 | 5     | Attention. Transformer. BERT.    |    [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture_5.pdf)      |   [ipynb](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_5.ipynb)   |          |
 | 6     | Computer vision. Classification. Object detection |  [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture_6.pdf) |   [ipynb](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_6.ipynb)    |     [lecture](https://www.youtube.com/live/bX3k14jH4mo?si=zlQcetmTlbnH9pQ3), [seminar](https://www.youtube.com/live/oEd4MYXzJwU?si=ujSuZR_uMUtcYfdl)      |
-| 7     | Semantic segmentation. Instance segmentation.     |   |      |          |
+| 7     | Semantic segmentation. Instance segmentation.     | [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture_7.pdf)  |   [ipynb](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_7.ipynb)   |          |
 | 8     | Reinforcement learning. V-, Q-functions. Belman equations. Value iteration.   |          |    -       |   |   |
 | 9     | Monte-Carlo methods. Temporal learning. Q-learning. DQN.  |           |         |          |
 | 10     | Policy gradients. Actor-Critic algorithm.  |         |       |       |
