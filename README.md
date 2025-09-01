@@ -1,59 +1,63 @@
-# Deep Learning Course 2025
+# Deep Learning Course, 2025
 
-> Intelligent Systems Department
+<p align="center">
+  <img width="600" alt="Deep Learning Logo" src="https://github.com/user-attachments/assets/8d0b86dd-7769-4c8c-bc8a-3695e1c64aae" />
+</p>
 
-## Table of Contents
+This course provides a comprehensive exploration of modern deep learning techniques, from foundational concepts to advanced topics such as computer vision systems and large language models.
 
-- [Syllabus](#syllabus)
-- [Schedule](#schedule)
-- [Recordings](#recordings)
-- [Contributing](#contributing)
-- [License](#license)
+- Introduction to Neural Networks: Initialization, Optimization, Regularization
+- Computer Vision
+- Natural Language Processing
+- Reinforcement Learning
+- Generative Models: VAE, GAN, Diffusion, Flow Matching
+- Advanced NLP: LLM, RAG, Agents
+- Acceleration: Compilation, Quantization, Distillation
 
-## Syllabus
+## Materials
 
-This course provides a comprehensive exploration of modern deep learning techniques, from foundational concepts to advanced topics such as transformers, graph learning, multimodal systems, and generative models.
+| Week # | Date | Topic | Lecture | Seminar | Recording |
+| :-: | :-: | - | :-: | :-: | :-: |
+| 1 | September, 9 | MLP, Backpropagation | - | - | - |
+| 2 | September, 16 | Optimization, Regularization | - | - | - |
+| 3 | September, 23 | Initialization, Normalization, CNN | - | - | - |
+| 4 | September, 30 | - | - | - |
+| 5 | October, 7 | - | - | - |
+| 6 | October, 14 | - | - | - | - |
+| 7 | October, 21 | - | - | - | - |
+| 8 | October, 28 | - | - | - | - |
+| 9 | November, 4 | - | - | - |
+| 10 | November, 11 | - | - | - |
+| 11 | November, 18 | - | - | - |
+| 12 | November, 25 | - | - | - |
+| 13 | December, 2 | - | - | - |
+| 14 | December, 9 | - | - | - |
 
-- Neural network optimization & regularization
-- Convolutional Neural Networks (CNNs)
-- Recurrent Neural Networks (RNNs), LSTMs, GRUs
-- Attention mechanisms & Transformers
-- Computer Vision: classification, detection, segmentation
-- Reinforcement Learning (RL)
-- Generative Models: VAEs, GANs
-- Graph Neural Networks
-- Multimodal Learning
+## Homeworks
 
-## Schedule
+| Homework # | Date | Deadline | Description | Link |
+| :-: | :-: | :-: | - | :-: |
+| 1 | - | - | - | - |
+| 2 | - | - | - | - |
+| 3 | - | - | - | - |
+| 4 | - | - | - | - |
+| 5 | - | - | - | - |
+| 6 | - | - | - | - |
 
-| Week | Topic | Lecture | Seminar | Recording |
-| :-: | - | :-: | :-: | :-: |
-| 1 | Multi-layer perceptron. Gradient calculation | - | - | - |
-| 2 | NN optimization. Regularization | - | - | - |
-| 3 | Weight initialization. Batch normalization. CNN | - | - | - |
-| 4 | RNNs, LSTM, GRU, State Space Models | - | - | - |
-| 5 | Attention, Transformer, BERT | - | - | - |
-| 6 | Computer Vision: Classification & Detection | - | - | - |
-| 7 | Semantic & Instance Segmentation | - | - | - |
-| 8 | Reinforcement Learning I | - | - | - |
-| 9 | Reinforcement Learning II | - | - | - |
-| 10 | Graph Learning | - | - | - |
-| 11 | Generative Models: VAE | - | - | - |
-| 12 | Autoregressive Models & GANs | - | - | - |
-| 13 | Multimodal Learning | - | - | - |
+## Game Rules
 
-## Recordings
+- 5-6 homeworks = **70 points**
+- Oral Exam = **30 points**
+- Maximum Points: 70 + 30 = **100 points**
 
-All lecture and seminar recordings are available on the [Machine Learning — Intelligent Systems](https://www.youtube.com/@MachineLearningIS) YouTube channel.
+### Final Grade: `min(round(#points/10), 10)`
 
-## Contributing
+## Prerequisities
+- Probability Theory + Statistics
+- Machine Learning
+- Python
 
-We encourage students and collaborators to contribute to this repository by:
-
-- Submitting issues for bugs or suggestions
-- Creating pull requests for improvements
-- Sharing additional resources or notebooks
-
-## License
-
-This repository is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+## Previous Episodes
+- [2024](https://github.com/intsystems/Deep-Learning-Course/tree/course-2024)
+- [2023](https://github.com/intsystems/Deep-Learning-Course/tree/course-2023)
+- [2022](https://github.com/intsystems/Deep-Learning-Course/tree/course-2022)
