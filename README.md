@@ -21,17 +21,17 @@ This course provides a comprehensive exploration of modern deep learning techniq
 | 1 | September, 9 | MLP, Backpropagation | - | - | - |
 | 2 | September, 16 | Optimization, Regularization | - | - | - |
 | 3 | September, 23 | Initialization, Normalization, CNN | - | - | - |
-| 4 | September, 30 | - | - | - |
-| 5 | October, 7 | - | - | - |
+| 4 | September, 30 | - | - | - | - |
+| 5 | October, 7 | - | - | - | - |
 | 6 | October, 14 | - | - | - | - |
 | 7 | October, 21 | - | - | - | - |
 | 8 | October, 28 | - | - | - | - |
-| 9 | November, 4 | - | - | - |
-| 10 | November, 11 | - | - | - |
-| 11 | November, 18 | - | - | - |
-| 12 | November, 25 | - | - | - |
-| 13 | December, 2 | - | - | - |
-| 14 | December, 9 | - | - | - |
+| 9 | November, 4 | - | - | - | - |
+| 10 | November, 11 | - | - | - | - |
+| 11 | November, 18 | - | - | - | - |
+| 12 | November, 25 | - | - | - | - |
+| 13 | December, 2 | - | - | - | - |
+| 14 | December, 9 | - | - | - | - |
 
 ## Homeworks
 
@@ -46,7 +46,7 @@ This course provides a comprehensive exploration of modern deep learning techniq
 
 ## Game Rules
 
-- 5-6 homeworks = **70 points**
+- 5-6 Homeworks = **70 points**
 - Oral Exam = **30 points**
 - Maximum Points: 70 + 30 = **100 points**
 
