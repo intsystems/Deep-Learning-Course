@@ -39,7 +39,7 @@ This course provides a comprehensive exploration of modern deep learning techniq
 | :-: | :-: | :-: | - | :-: |
 | 1 | 08.09 | 29.09 | Autograd implementation | - |
 | 2 | 08.09 | 13.10 | Alexnet implementation on PyTorch | - |
-| 3 | 08.09 | 27.10 | Image captioning with attention | - |
+| 3 | 08.09 | 28.10 | Image captioning with attention | - |
 | 4 | - | - | - | - |
 | 5 | - | - | - | - |
 | 6 | - | - | - | - |
