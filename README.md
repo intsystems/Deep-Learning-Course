@@ -37,9 +37,9 @@ This course provides a comprehensive exploration of modern deep learning techniq
 
 | Homework # | Date | Deadline | Description | Link |
 | :-: | :-: | :-: | - | :-: |
-| 1 | 08.09 | 29.09 | Autograd implementation | - |
-| 2 | 08.09 | 13.10 | Alexnet implementation on PyTorch | - |
-| 3 | 08.09 | 28.10 | Image captioning with attention | - |
+| 1 | 08.09 | 29.09 | Autograd implementation | [google form](https://forms.gle/7V29FvAw2NFyu6yW9) |
+| 2 | 08.09 | 13.10 | Alexnet implementation on PyTorch | [google form](https://forms.gle/wYxgGXk2TXrvp1yA6) |
+| 3 | 08.09 | 28.10 | Image captioning with attention | [google form](https://forms.gle/QsPFczTsbqktgvxn6) |
 | 4 | - | - | - | - |
 | 5 | - | - | - | - |
 | 6 | - | - | - | - |
