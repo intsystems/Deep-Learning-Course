@@ -240,9 +240,9 @@ class Mean(TensorOp):
         return array_api.mean(a, self.axes)
 
     def gradient(self, out_grad, node):
-        inp_size = numpy.product(node.inputs[0].shape)
+        inp_size = numpy.prod(node.inputs[0].shape)
         grad_size = 1 if out_grad.shape == tuple() \
-            else numpy.product(out_grad.shape)
+            else numpy.prod(out_grad.shape)
         size_diff = inp_size / grad_size
 
         sum_grad = Summation(self.axes, self.keepdims).gradient(out_grad, node)
@@ -353,7 +353,7 @@ class Variation(TensorOp):
         inp_mean = inp_mean.broadcast_to(inp_shape)
 
         reduced_size = inp.size if self.axes is None \
-            else numpy.product([inp.shape[ax] for ax in self.axes])
+            else numpy.prod([inp.shape[ax] for ax in self.axes])
         grad_coeff = 2. / reduced_size
 
         broadcasted_grad = Summation(self.axes, self.keepdims).gradient(out_grad, node)
