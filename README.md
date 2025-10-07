@@ -21,8 +21,8 @@ This course provides a comprehensive exploration of modern deep learning techniq
 | 1 | September, 9 | MLP, Backpropagation | [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture%201.pdf), [slides with notes](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture%201%20(with%20notes).pdf) | [ipynb](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_1_autodiff_impl.ipynb) | [record](https://www.youtube.com/watch?v=5nJy3tk-bBk) |
 | 2 | September, 16 | Optimization, Regularization | [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture%202.pdf) | [ipynb](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_2_torch_intro.ipynb) | [record](https://www.youtube.com/watch?v=ISBiQuQoWdE) |
 | 3 | September, 23 | Initialization, Normalization, CNN | [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture%203.pdf) | [seminar](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_3_convolution.ipynb), [notes](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_3_notes.pdf) | [lecture record](https://www.youtube.com/watch?v=CCwrJHJ-5CI), [seminar record](https://www.youtube.com/watch?v=7XNGYyTWHO4) |
-| 4 | September, 30 | - | - | - | - |
-| 5 | October, 7 | - | - | - | - |
+| 4 | September, 30 | Embeddings | [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture%204.pdf) | [ipynb](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_4_NLP_1.ipynb)  | - |
+| 5 | October, 7 | RNN, LSTM, Attention, Transformer | [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture%205.pdf)  | [ipynb](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_5_NLP_2.ipynb) | - |
 | 6 | October, 14 | - | - | - | - |
 | 7 | October, 21 | - | - | - | - |
 | 8 | October, 28 | - | - | - | - |
