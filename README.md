@@ -6,7 +6,7 @@
 
 This course provides a comprehensive exploration of modern deep learning techniques, from foundational concepts to advanced topics.
 
-- Introduction to Neural Networks: Initialization, Optimization, Regularization
+- Introduction to Neural Networks: Initialization, Optimization, Regularization, MLP, CNN
 - Natural Language Processing: Embeddings, RNN, LSTM, Attention, Transformer
 - Computer Vision
 - Reinforcement Learning
