@@ -8,7 +8,7 @@ This course provides a comprehensive exploration of modern deep learning techniq
 
 - **Introduction to Neural Networks:** MLP, Backpropagation, Initialization, Optimization, Regularization, CNN
 - **Natural Language Processing:** Embeddings, RNN, LSTM, Attention, Transformer
-- **Computer Vision**
+- **Computer Vision:** Classification, Object detection, Segmentation
 - **Reinforcement Learning**
 - **Generative Models:** Autoregression, VAE, GAN, Diffusion, Flow Matching
 - **Advanced NLP:** LLM, RAG, Agents
