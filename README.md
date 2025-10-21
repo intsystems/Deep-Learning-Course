@@ -32,7 +32,7 @@ This course provides a comprehensive exploration of modern deep learning techniq
 | 4 | September, 30 | Intro to NLP, Embeddings | [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture%204.pdf) | [ipynb](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_4_NLP_1.ipynb)  | [record](https://www.youtube.com/live/j7V4eSl1Rmo?si=XNnqPiK-YIMsm0zT) |
 | 5 | October, 7 | RNN, LSTM, Attention, Transformer | [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture%205.pdf)  | [ipynb](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_5_NLP_2.ipynb) | [record](https://www.youtube.com/live/g1UYX5oz7Cc?si=dhIo8UOCM0jYJGf9) |
 | 6 | October, 14 | Classification, Object Detection | [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture%206.pdf) | [ipynb](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_6.ipynb) | [lecture](https://m.youtube.com/watch?v=tnFvp-QugwM), [seminar](https://m.youtube.com/watch?v=yu9UH-kEDJc) |
-| 7 | October, 21 | - | - | - | - |
+| 7 | October, 21 | Segmentation | [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture%207.pdf) | [ipynb_1](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_7_1.ipynb), [ipynb_2](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_7_2.ipynb) | [lecture](https://www.youtube.com/watch?v=EL-AwxRfqzM), [seminar](https://m.youtube.com/watch?v=9QuEBNjRmdA&pp=0gcJCQYKAYcqIYzv) |
 | 8 | October, 28 | - | - | - | - |
 | 9 | November, 4 | - | - | - | - |
 | 10 | November, 11 | - | - | - | - |
