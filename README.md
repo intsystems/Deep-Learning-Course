@@ -7,12 +7,12 @@
 This course provides a comprehensive exploration of modern deep learning techniques, from foundational concepts to advanced topics.
 
 - **Introduction to Neural Networks:** MLP, Backpropagation, Initialization, Optimization, Regularization, CNN
-- **Natural Language Processing:** Embeddings, RNN, LSTM, Attention, Transformer
+- **Natural Language Processing:** Word Embeddings, RNN, LSTM, Attention, Transformer
 - **Computer Vision:** Classification, Object detection, Segmentation
-- **Reinforcement Learning**
+- **Reinforcement Learning:** Multi-armed Bandits, Monte Carlo Methods, Policy Improvement
 - **Generative Models:** Autoregression, VAE, GAN, Diffusion, Flow Matching
-- **Advanced NLP:** LLM, RAG, Agents
-- **Acceleration:** Compilation, Quantization, Distillation
+- **Advanced NLP:** LLMs, Fine-tuning, RAG, Agents, Multi-modal Models
+- **Acceleration:** Quantization, Pruning, Distillation, KV-Cache, Flash Attention
 
 ## Course Staff
 
@@ -29,17 +29,17 @@ This course provides a comprehensive exploration of modern deep learning techniq
 | 1 | September, 9 | MLP, Backpropagation | [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture%201.pdf), [slides with notes](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture%201%20(with%20notes).pdf) | [ipynb](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_1_autodiff_impl.ipynb) | [record](https://www.youtube.com/watch?v=5nJy3tk-bBk) |
 | 2 | September, 16 | Optimization, Regularization | [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture%202.pdf) | [ipynb](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_2_torch_intro.ipynb) | [record](https://www.youtube.com/watch?v=ISBiQuQoWdE) |
 | 3 | September, 23 | Initialization, Normalization, CNN | [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture%203.pdf) | [ipynb](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_3_convolution.ipynb), [notes](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_3_notes.pdf) | [lecture record](https://www.youtube.com/watch?v=CCwrJHJ-5CI), [seminar record](https://www.youtube.com/watch?v=7XNGYyTWHO4) |
-| 4 | September, 30 | Intro to NLP, Embeddings | [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture%204.pdf) | [ipynb](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_4_NLP_1.ipynb)  | [record](https://www.youtube.com/live/j7V4eSl1Rmo?si=XNnqPiK-YIMsm0zT) |
+| 4 | September, 30 | Intro to NLP, Word Embeddings | [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture%204.pdf) | [ipynb](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_4_NLP_1.ipynb)  | [record](https://www.youtube.com/live/j7V4eSl1Rmo?si=XNnqPiK-YIMsm0zT) |
 | 5 | October, 7 | RNN, LSTM, Attention, Transformer | [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture%205.pdf)  | [ipynb](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_5_NLP_2.ipynb) | [record](https://www.youtube.com/live/g1UYX5oz7Cc?si=dhIo8UOCM0jYJGf9) |
 | 6 | October, 14 | Classification, Object Detection | [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture%206.pdf) | [ipynb](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_6.ipynb) | [lecture](https://m.youtube.com/watch?v=tnFvp-QugwM), [seminar](https://m.youtube.com/watch?v=yu9UH-kEDJc) |
 | 7 | October, 21 | Segmentation | [slides](https://github.com/intsystems/Deep-Learning-Course/blob/main/lectures/Lecture%207.pdf) | [ipynb_1](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_7_1.ipynb), [ipynb_2](https://github.com/intsystems/Deep-Learning-Course/blob/main/seminars/Seminar_7_2.ipynb) | [lecture](https://www.youtube.com/watch?v=EL-AwxRfqzM), [seminar](https://m.youtube.com/watch?v=9QuEBNjRmdA&pp=0gcJCQYKAYcqIYzv) |
-| 8 | October, 28 | - | - | - | - |
-| 9 | November, 4 | - | - | - | - |
-| 10 | November, 11 | - | - | - | - |
-| 11 | November, 18 | - | - | - | - |
-| 12 | November, 25 | - | - | - | - |
-| 13 | December, 2 | - | - | - | - |
-| 14 | December, 9 | - | - | - | - |
+| 8 | October, 28 | Multi-armed Bandits, Bellman Equations, Monte Carlo Methods, TD Learning, Q-Learning | - | - | [record](https://youtube.com/live/Ssyc0CDSpss) |
+| 9 | November, 11 | - | - | - | - |
+| 10 | November, 18 | - | - | - | - |
+| 11 | November, 25 | - | - | - | - |
+| 12 | December, 2 | - | - | - | - |
+| 13 | December, 9 | - | - | - | - |
+| 14 | December, 16 | - | - | - | - |
 
 ## Homeworks
 
