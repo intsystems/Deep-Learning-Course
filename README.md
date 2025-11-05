@@ -48,8 +48,8 @@ This course provides a comprehensive exploration of modern deep learning techniq
 | 1 | September, 8 | September, 29 | Autograd implementation | [google form](https://forms.gle/7V29FvAw2NFyu6yW9) |
 | 2 | September, 8 | October, 13 | Alexnet implementation on PyTorch | [google form](https://forms.gle/wYxgGXk2TXrvp1yA6) |
 | 3 | September, 8 | October, 28 | Image captioning with attention | [google form](https://forms.gle/QsPFczTsbqktgvxn6) |
-| 4 | - | - | - | - |
-| 5 | - | - | - | - |
+| 4 | November, 5 | November, 21 | Satellite images segmentation | [google form](https://forms.gle/aZsSVZqR82xMwvBNA) |
+| 5 | November, 5 | December, 5 | Multi-armed bandits & CartPole | [google form](https://forms.gle/iHq2RBrTnLqFm9mN8) |
 | 6 | - | - | - | - |
 
 ## Game Rules
