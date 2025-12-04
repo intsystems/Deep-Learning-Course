@@ -49,12 +49,11 @@ This course provides a comprehensive exploration of modern deep learning techniq
 | 2 | September, 8 | October, 13 | Alexnet implementation on PyTorch | [google form](https://forms.gle/wYxgGXk2TXrvp1yA6) |
 | 3 | September, 8 | October, 28 | Image captioning with attention | [google form](https://forms.gle/QsPFczTsbqktgvxn6) |
 | 4 | November, 5 | November, 21 | Satellite images segmentation | [google form](https://forms.gle/aZsSVZqR82xMwvBNA) |
-| 5 | November, 5 | December, 5 | Multi-armed bandits & CartPole | [google form](https://forms.gle/iHq2RBrTnLqFm9mN8) |
-| 6 | - | - | - | - |
+| 5 | November, 5 | December, 12 | Multi-armed bandits & CartPole | [google form](https://forms.gle/iHq2RBrTnLqFm9mN8) |
 
 ## Game Rules
 
-- 6 Homeworks = **70 points**
+- 5 Homeworks = **70 points**
 - Oral Exam = **30 points**
 - Maximum Points: 70 + 30 = **100 points**
 
