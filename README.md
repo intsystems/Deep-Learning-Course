@@ -37,7 +37,7 @@ This course provides a comprehensive exploration of modern deep learning techniq
 | 9 | November, 11 | - | - | - | - |
 | 10 | November, 18 | Autoregression, VAE, GAN | [slides](lectures/Lecture%2010.pdf) | [ipynb](seminars/Seminar_10_Autoregression_VAE_GAN.ipynb) | [record](https://www.youtube.com/live/ZL-ztq4yFUM?si=OnGjKdExS9qJuleK) |
 | 11 | November, 25 | Diffusion Models, Flow Matching | [slides](lectures/Lecture%2011.pdf) | [ipynb](seminars/Seminar_11_Flow_Matching.ipynb) | [record](https://www.youtube.com/live/ykNc2-uJoJ0?si=jvlC4fTguTEbHn5v) |
-| 12 | December, 2 | - | - | - | - |
+| 12 | December, 2 | Multimodality, CLIP, BLIP, LLaVA | [slides](lectures/Lecture%2013.pdf) | [ipynb](seminars/Seminar_13_multimodal.ipynb) | - |
 | 13 | December, 9 | - | - | - | - |
 | 14 | December, 16 | - | - | - | - |
 
