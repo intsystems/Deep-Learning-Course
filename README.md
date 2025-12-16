@@ -39,7 +39,7 @@ This course provides a comprehensive exploration of modern deep learning techniq
 | 11 | November, 25 | Diffusion Models, Flow Matching | [slides](lectures/Lecture%2011.pdf) | [ipynb](seminars/Seminar_11_Flow_Matching.ipynb) | [record](https://www.youtube.com/live/ykNc2-uJoJ0?si=jvlC4fTguTEbHn5v) |
 | 12 | December, 2 | - | - | - | - |
 | 13 | December, 9 | Multimodality, CLIP, BLIP, LLaVA | [slides](lectures/Lecture%2013.pdf) | [ipynb](seminars/Seminar_13_multimodal.ipynb) | [lecture](https://m.youtube.com/watch?v=NbKxaO2CMNs&pp=2AYC), [seminar](https://m.youtube.com/watch?v=XYw4plCS3_k) |
-| 14 | December, 16 | - | - | - | - |
+| 14 | December, 16 | Quantization, Pruning, Distillation, KV-Cache, Flash Attention | [slides](lectures/Lecture%2014.pdf) | - | [record](https://www.youtube.com/live/8ffgdQCkLtI?si=bLMn6upXLJo73_p9) |
 
 ## Homeworks
 
