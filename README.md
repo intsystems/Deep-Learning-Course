@@ -24,31 +24,30 @@ This course provides a comprehensive exploration of modern deep learning techniq
 
 | Week # | Date | Topic | Lecture | Seminar | Recording |
 | :-: | - | - | :-: | :-: | :-: |
-| 1 | September, 8 | TODO | TODO | TODO | TODO |
-| 2 | September, 15 | TODO | TODO | TODO | TODO |
-| 3 | September, 22 | TODO | TODO | TODO | TODO |
-| 4 | September, 29 | TODO | TODO | TODO | TODO |
-| 5 | October, 6 | TODO | TODO | TODO | TODO |
-| 6 | October, 13 | TODO | TODO | TODO | TODO |
-| 7 | October, 20 | TODO | TODO | TODO | TODO |
-| 8 | October, 27 | TODO | TODO | TODO | TODO |
-| 9 | November, 3 | TODO | TODO | TODO | TODO |
-| 10 | November, 10 | TODO | TODO | TODO | TODO |
-| 11 | November, 17 | TODO | TODO | TODO | TODO |
-| 12 | November, 24 | TODO | TODO | TODO | TODO |
-| 13 | December, 1 | TODO | TODO | TODO | TODO |
-| 14 | December, 8 | TODO | TODO | TODO | TODO |
+| 1 | September, 8 | TBA | TBA | TBA | TBA |
+| 2 | September, 15 | TBA | TBA | TBA | TBA |
+| 3 | September, 22 | TBA | TBA | TBA | TBA |
+| 4 | September, 29 | TBA | TBA | TBA | TBA |
+| 5 | October, 6 | TBA | TBA | TBA | TBA |
+| 6 | October, 13 | TBA | TBA | TBA | TBA |
+| 7 | October, 20 | TBA | TBA | TBA | TBA |
+| 8 | October, 27 | TBA | TBA | TBA | TBA |
+| 9 | November, 3 | TBA | TBA | TBA | TBA |
+| 10 | November, 10 | TBA | TBA | TBA | TBA |
+| 11 | November, 17 | TBA | TBA | TBA | TBA |
+| 12 | November, 24 | TBA | TBA | TBA | TBA |
+| 13 | December, 1 | TBA | TBA | TBA | TBA |
+| 14 | December, 8 | TBA | TBA | TBA | TBA |
 
 ## Homeworks
 
 | Homework # | Date | Deadline | Description | Link |
 | :-: | - | - | - | :-: |
-| 1 | Month, Day | Month, Day | TODO | TODO |
-| 2 | Month, Day | Month, Day | TODO | TODO |
-| ⋮ | ⋮ | ⋮ | ⋮ | ⋮ |
-| K | Month, Day | Month, Day | TODO | TODO |
-
-> The total number of homeworks **K** is not fixed yet.
+| 1 | TBA | TBA | TBA | TBA |
+| 2 | TBA | TBA | TBA | TBA |
+| 3 | TBA | TBA | TBA | TBA |
+| 4 | TBA | TBA | TBA | TBA |
+| 5 | TBA | TBA | TBA | TBA |
 
 ## Game Rules
 
