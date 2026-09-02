@@ -4,7 +4,13 @@
   <img width="600" alt="Deep Learning Logo" src="https://github.com/user-attachments/assets/8d0b86dd-7769-4c8c-bc8a-3695e1c64aae" />
 </p>
 
-TODO
+This course provides a comprehensive exploration of modern deep learning techniques, from foundational concepts to advanced topics.
+
+- **Introduction to Neural Networks:** MLP, Backpropagation, Initialization, Optimization, Regularization, CNN
+- **Natural Language Processing:** Word Embeddings, RNN, LSTM, Attention, Transformer, LLM, Agents
+- **Computer Vision:** Classification, Object detection, Segmentation
+- **Generative Models:** Autoregression, VAE, GAN, Diffusion, Diffusion Models, Flow Matching, Multimodality
+- **Advanced:** Reinforcement Learning, Deep Learning Theory, Acceleration
 
 ## Course Staff
 
@@ -46,9 +52,10 @@ TODO
 
 ## Game Rules
 
-- K Homeworks = **M points**
-- Oral Exam = **N points**
-- Maximum Points: M + N = **S points**
+- 14 Quizzes = **14 points**
+- 5 Homeworks = **50 points**
+- Oral Exam = **40 points**
+- Maximum Points: 14 + 50 + 40 = **104 points**
 
 ### Final Grade: `min(round(#points/10), 10)`
 
