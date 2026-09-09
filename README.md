@@ -24,7 +24,7 @@ This course provides a comprehensive exploration of modern deep learning techniq
 
 | Week # | Date | Topic | Lecture | Seminar | Recording |
 | :-: | - | - | :-: | :-: | :-: |
-| 1 | September, 8 | MLP, Backpropagation | [lecture](lectures/Lecture%2011.pdf) | [seminar](seminars/Seminar_1_autodiff_impl.ipynb) | [record](https://www.youtube.com/watch?v=JhmIgkdTmAw) |
+| 1 | September, 8 | MLP, Backpropagation | [lecture](lectures/lecture-01.pdf) | [seminar](seminars/Seminar_1_autodiff_impl.ipynb) | [record](https://www.youtube.com/watch?v=JhmIgkdTmAw) |
 | 2 | September, 15 | TBA | TBA | TBA | TBA |
 | 3 | September, 22 | TBA | TBA | TBA | TBA |
 | 4 | September, 29 | TBA | TBA | TBA | TBA |
