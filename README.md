@@ -25,8 +25,8 @@ This course provides a comprehensive exploration of modern deep learning techniq
 | Week # | Date | Topic | Lecture | Seminar | Recording |
 | :-: | - | - | :-: | :-: | :-: |
 | 1 | September, 8 | MLP, Backpropagation | [lecture](lectures/lecture-01.pdf) | [seminar](seminars/Seminar_1_autodiff_impl.ipynb) | [record](https://www.youtube.com/watch?v=JhmIgkdTmAw) |
-| 2 | September, 15 | TBA | TBA | TBA | TBA |
-| 3 | September, 22 | TBA | TBA | TBA | TBA |
+| 2 | September, 15 | Optimization, Regularization | [lecture](lectures/lecture-02.pdf) | [seminar](seminars/Seminar_2_torch_intro.ipynb) | [record 2025](https://www.youtube.com/watch?v=ISBiQuQoWdE) |
+| 3 | September, 22 | Initialization, Normalization, CNN | [lecture](lectures/lecture-03.pdf) | [seminar](seminars/Seminar_3_convolution.ipynb), [notes](seminars/Seminar_3_notes.pdf) | TBA |
 | 4 | September, 29 | TBA | TBA | TBA | TBA |
 | 5 | October, 6 | TBA | TBA | TBA | TBA |
 | 6 | October, 13 | TBA | TBA | TBA | TBA |
