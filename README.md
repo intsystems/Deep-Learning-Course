@@ -30,7 +30,7 @@ This course provides a comprehensive exploration of modern deep learning techniq
 | 4 | September, 29 | TBA | TBA | TBA | TBA |
 | 5 | October, 6 | TBA | TBA | TBA | TBA |
 | 6 | October, 13 | TBA | TBA | TBA | TBA |
-| 7 | October, 20 | TBA | TBA | TBA | TBA |
+| 7 | October, 20 | Classification, Object Detection | [lecture](lectures/lecture-07.pdf) | [seminar](seminars/seminar-07.ipynb) | TBA |
 | 8 | October, 27 | TBA | TBA | TBA | TBA |
 | 9 | November, 3 | TBA | TBA | TBA | TBA |
 | 10 | November, 10 | TBA | TBA | TBA | TBA |
