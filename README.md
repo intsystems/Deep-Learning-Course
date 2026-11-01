@@ -44,10 +44,10 @@ This course provides a comprehensive exploration of modern deep learning techniq
 | Homework # | Date | Deadline | Description | Link |
 | :-: | - | - | - | :-: |
 | 1 | 09.09 | 30.09 | Autograd implementation | [google form](https://forms.gle/ypn2sFsE9MrEJTi2A) |
-| 2 | TBA | TBA | TBA | TBA |
-| 3 | TBA | TBA | TBA | TBA |
+| 2 | 11.10 | 25.10 | Image Captioning | [google form](https://forms.gle/BDhrdhK9dWsKgiNV6) |
+| 3 | 01.11 | 15.11 | Image Segmentation | [google form](https://forms.gle/Wbvh3Eka5NbQKpRbA) |
 | 4 | TBA | TBA | TBA | TBA |
-| 5 | TBA | TBA | TBA | TBA |
+| 5 | 01.11 | 13.12 | Multi-Armed Bandit + CartPole | [google form](https://forms.gle/FcD2c6pfHkZ1bHTKA) |
 
 ## Game Rules
 
