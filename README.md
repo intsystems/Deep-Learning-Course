@@ -27,9 +27,9 @@ This course provides a comprehensive exploration of modern deep learning techniq
 | 1 | September, 8 | MLP, Backpropagation | [lecture](lectures/lecture-01.pdf) | [seminar](seminars/Seminar_1_autodiff_impl.ipynb) | [record](https://www.youtube.com/watch?v=JhmIgkdTmAw) |
 | 2 | September, 15 | Optimization, Regularization | [lecture](lectures/lecture-02.pdf) | [seminar](seminars/Seminar_2_torch_intro.ipynb) | [record 2025](https://www.youtube.com/watch?v=ISBiQuQoWdE) |
 | 3 | September, 22 | Initialization, Normalization, CNN | [lecture](lectures/lecture-03.pdf) | [seminar](seminars/Seminar_3_convolution.ipynb), [notes](seminars/Seminar_3_notes.pdf) | TBA |
-| 4 | September, 29 | TBA | TBA | TBA | TBA |
-| 5 | October, 6 | TBA | TBA | TBA | TBA |
-| 6 | October, 13 | TBA | TBA | TBA | TBA |
+| 4 | September, 29 | Intro to NLP, Word Embeddings | [lecture](lectures/lecture-04.pdf) | [seminar](seminars/seminar-04.ipynb) | [record](https://www.youtube.com/watch?v=BVJtUMOqiKM) |
+| 5 | October, 6 | RNN, LSTM, Attention, Transformer | [lecture](lectures/lecture-05.pdf) | [seminar](seminars/seminar-05.ipynb) | [record](https://www.youtube.com/watch?v=E866_43YrcE) |
+| 6 | October, 13 | LLM, Fine-Tuning, LoRA, RAG, Agents | [lecture](lectures/lecture-06.pdf) | **NONE** | [record](https://www.youtube.com/watch?v=FGPzCFtiKsQ) |
 | 7 | October, 20 | Classification, Object Detection | [lecture](lectures/lecture-07.pdf) | [seminar](seminars/seminar-07.ipynb) | [lecture](https://www.youtube.com/live/WaMcQDVvR4Y?si=1RnYEyNqvTXPN_JO), [seminar](https://www.youtube.com/live/_F9TGFGVGBY?si=1vZHXwvCQiv1iaS0) |
 | 8 | October, 27 | Segmentation, Style transfer | [lecture](lectures/lecture-08.pdf) | [seminar1](seminars/seminar-08-1.ipynb), [seminar2](seminars/seminar-08-2.ipynb) | [lectute](https://www.youtube.com/live/tHgqSVijlGA?si=HuiETivxHZcsE6fn), [seminar](https://www.youtube.com/live/5gowDNue8N8?si=96s2dVoVWqVmC3Ob) |
 | 9 | November, 3 | Autoregression, VAE, GAN | [lecture](lectures/lecture-09.pdf) | [seminar](seminars/seminar-09.ipynb) | [record](https://www.youtube.com/watch?v=vg1Vp-OYNEo) |
