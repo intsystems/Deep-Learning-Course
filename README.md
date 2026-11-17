@@ -34,7 +34,8 @@ This course provides a comprehensive exploration of modern deep learning techniq
 | 8 | October, 27 | Segmentation, Style transfer | [lecture](lectures/lecture-08.pdf) | [seminar1](seminars/seminar-08-1.ipynb), [seminar2](seminars/seminar-08-2.ipynb) | [lectute](https://www.youtube.com/live/tHgqSVijlGA?si=HuiETivxHZcsE6fn), [seminar](https://www.youtube.com/live/5gowDNue8N8?si=96s2dVoVWqVmC3Ob) |
 | 9 | November, 3 | Autoregression, VAE, GAN | [lecture](lectures/lecture-09.pdf) | [seminar](seminars/seminar-09.ipynb) | [record](https://www.youtube.com/watch?v=vg1Vp-OYNEo) |
 | 10 | November, 10 | Diffusion Models, Flow Matching | [lecture](lectures/lecture-10.pdf) | [seminar](seminars/seminar-10.ipynb) | [record](https://www.youtube.com/watch?v=YdHJ2SiZ0eo) |
-| 11 | November, 17 | Multimodality, CLIP, BLIP, LLaVA, QWEN | [lecture](lectures/lecture-11.pdf) | [seminar](seminars/seminar-11.ipynb) | [record]() |
+| 11 | November, 17 | Multimodality, CLIP, BLIP, LLaVA, QWEN | [lecture](lectures/lecture-11.pdf) | [seminar](seminars/seminar-11.ipynb) | [record](https://www.youtube.com/live/Xzvfjw9xupQ?si=E_8f_KS1eAy9qZpu
+You) |
 | 12 | November, 24 | TBA | TBA | TBA | TBA |
 | 13 | December, 1 | TBA | TBA | TBA | TBA |
 | 14 | December, 8 | TBA | TBA | TBA | TBA |
